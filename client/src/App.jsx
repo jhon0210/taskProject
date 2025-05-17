@@ -4,10 +4,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
-        <Route path="/tasks" element={<h1>Tasks page</h1>} />
-        <Route path="/add-task" element={<h1>new task</h1>} />
-        <Route path="/tasks/:id" element={<h1>update task</h1>} />
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/tasks" element={<TasksPage/>} />
+        <Route path="/add-task" element={<TaskFormPage/>} />
+        <Route path="/tasks/:id" element={<TaskFormPage/>} />
       </Routes>
     </BrowserRouter>
   )
